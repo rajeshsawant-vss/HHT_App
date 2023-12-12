@@ -1,0 +1,89 @@
+<resources>
+    <string name="app_name">AVANT GARDE</string>
+    <string name="header_login1">AVANT</string>
+    <string name="header_login2">GARDE</string>
+    <string name="username">User name</string>
+    <string name="pass">Password</string>
+    <string name="login">Login</string>
+    <string name="error_user">User name can not be empty </string>
+    <string name="error_pass">Password can not be empty</string>
+    <string name="trouble_sign_in">Trouble logging in? Contact local IPMS 4.0 IT support team</string>
+    <string name="ok">OK</string>
+    <string name="help">Help</string>
+    <string name="setting">Setting</string>
+    <string name="logout">Logout</string>
+    <string name="lable_scanned">Scanned Serial Number</string>
+    <string name="continue1">CONTINUE VALIDATION</string>
+
+    <string name="part_validation_pending">Part validation is pending for few parts. View report to perform validation</string>
+    <string name="part_validation_ready">Final part validation completed. Ready to book</string>
+    <string name="part_no">Part Number</string>
+    <string name="part_family">Part Family</string>
+    <string name="part_family2">Part Family(Qty)</string>
+    <string name="part_family1"># \u0020 Part Family</string>
+    <string name="home">HOME</string>
+    <string name="report">VIEW REPORT</string>
+    <string name="part_discription">Part Description</string>
+    <string name="serial_no">55276000226R4071</string>
+    <string name="text_number">550754800103</string>
+    <string name="text_family">WIRING HARNESS,MAIN</string>
+    <string name="quantity">Quantity</string>
+    <string name="text_unable_scan">Unable to scan? Enter manually</string>
+    <string name="part1">LP 410/36 CHASSIS_CAB/COWL</string>
+    <string name="partmatch">Scanned Successfully</string>
+    <string name="loading">Scanning, please wait....</string>
+
+    <string name="parterror">Could not scan the part</string>
+    <string name="parterror1">Part not matched</string>
+    <string name="partskipped">Part Skipped</string>
+    <string name="proceed_to_book">PROCEED TO BOOK</string>
+    <string name="status">Status</string>
+    <string name="reason">Reason</string>
+    <string name="token_type">Bearer</string>
+    <string name="light_mode">Light Mode</string>
+    <string name="dark_mode">Dark Mode</string>
+    <string name="booking_request">Booking request for serial number</string>
+    <string name="booking_initiated">has been initiated successfully</string>
+    <string name="final_initiated">Final part validation completed.\n Ready to book</string>
+
+
+    <string name="activity_intent_filter_action">com.basicintent1.ACTION</string>
+    <string name="datawedge_intent_key_source">com.symbol.datawedge.source</string>
+    <string name="datawedge_intent_key_label_type">com.symbol.datawedge.label_type</string>
+    <string name="datawedge_intent_key_data">com.symbol.datawedge.data_string</string>
+    <string name="invalid_user_pass">Invalid Username or Password</string>
+    <string name="scan_serial_no">SCAN SERIAL NUMBER</string>
+    <string name="scan_part_no">SCAN PART</string>
+    <string name="serial_no_error">Please enter correct serial no</string>
+    <string name="station_name">Pune/DS/Station 1</string>
+    <string name="station_name2">Dharwad/FES/ST11</string>
+    <string name="station_name3">Dharwad/FES/ST03</string>
+    <string name="enter_serial_no">Enter Serial No</string>
+    <string name="part_validation">Part Validation</string>
+    <string name="scan_serial_no_to_start">Scan the serial number to get started</string>
+    <string name="unable_to_scan">Unable to scan? Enter manually</string>
+    <string name="server_is_down">Server is down</string>
+    <string name="server_not_found">Server not found</string>
+    <string name="server_error">Server Error</string>
+    <string name="part_to_be_scan">Part to be scanned</string>
+    <string name="rescan">RESCAN PART</string>
+    <string name="part_to_be_scan1">Part genealogy completed successfully</string>
+    <string name="or">Or</string>
+    <string name="skip_part">Skip Part</string>
+
+    <string name="validation_report">Validation Report</string>
+    <string name="part_genology_error">Part geneology is pending for few parts. View report to perform validation</string>
+
+    <string name="still_error">Still getting the error? Skip Part</string>
+    <string name="reson_skip">Reason to skip scanning</string>
+    <string name="genelogy_completed">Part validation completed successfully</string>
+    <string name="internet_error">Please check internet connection</string>
+
+    <string-array name="reasons">
+        <item>Duplicate Serial Number</item>
+        <item>Damaged barcode sticker</item>
+        <item>Not able to locate the correct barcode sticker</item>
+
+    </string-array>
+
+</resources>

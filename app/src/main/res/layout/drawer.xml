@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back_color">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/lnrheader"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:ignore="MissingConstraints">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/font_family_part_light_lable2"
+            android:text="@string/text_family"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_centerVertical="true"
+            android:id="@+id/txtHeader"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_baseline_close"
+
+            />
+
+    </RelativeLayout>
+
+
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:id="@+id/lnrMode"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@color/back_color"
+        app:layout_constraintTop_toBottomOf="@+id/lnrheader"
+        android:orientation="horizontal">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_mode"
+
+            android:id="@+id/imgMode"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            style="@style/font_family_part_light_lable2"
+            android:id="@+id/txtMode"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/back_color"
+        android:visibility="gone"
+        android:layout_marginStart="@dimen/_10sdp"
+
+        android:id="@+id/lnrHelp"
+        app:layout_constraintTop_toBottomOf="@+id/lnrMode"
+        android:orientation="horizontal">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:src="@drawable/ic_baseline_help"
+            android:id="@+id/imgHelp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/help"
+            android:layout_gravity="center_vertical"
+            style="@style/font_family_part_light_lable2"
+            android:id="@+id/txtHelp"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+
+        android:visibility="gone"
+        android:background="@color/back_color"
+        android:id="@+id/lnrSetting"
+        app:layout_constraintTop_toBottomOf="@+id/lnrHelp"
+        android:orientation="horizontal">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:src="@drawable/ic_baseline_settings"
+            android:id="@+id/imgSetting"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/setting"
+            android:layout_gravity="center_vertical"
+            style="@style/font_family_part_light_lable2"
+            android:id="@+id/txtSetting"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/back_color"
+        android:id="@+id/lnrLogout"
+        android:layout_marginStart="@dimen/_10sdp"
+
+        app:layout_constraintTop_toBottomOf="@+id/lnrSetting"
+        android:orientation="horizontal">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_logout_24"
+            android:id="@+id/imgLogout"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/logout"
+            android:layout_gravity="center_vertical"
+            style="@style/font_family_part_light_lable2"
+            android:id="@+id/txtLogout"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <!--    <androidx.recyclerview.widget.RecyclerView-->
+<!--        android:id="@+id/recyDrawer"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.0"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/imgClose" />-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

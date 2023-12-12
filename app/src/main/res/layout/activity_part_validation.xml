@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/part_colour"
+    style="@style/Theme.AppCompat.NoActionBar"
+    android:id="@+id/mainLayout"
+    tools:context=".activities.PartValidation">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBaseline_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.113">
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/linearLayoutCompat"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="@dimen/_30sdp"
+
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lnrLables">
+
+            <androidx.appcompat.widget.AppCompatTextView
+
+                style="@style/font_family_part_light_lable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/part_no" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+
+                android:id="@+id/textPartNo1"
+                style="@style/font_family_part_bold_lable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/serial_no"
+
+                android:textStyle="bold" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/lnrLables"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="@dimen/_30sdp"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/include2">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtlable1"
+                style="@style/font_family_part_light_lable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lable_scanned" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtSerailNO"
+                style="@style/font_family_part_bold_lable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/serial_no"
+                android:textStyle="bold" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="vertical"
+            android:layout_marginStart="@dimen/_30sdp"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayoutCompat">
+
+            <androidx.appcompat.widget.AppCompatTextView
+
+                style="@style/font_family_part_light_lable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/part_discription" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+
+                style="@style/font_family_part_bold_lable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/part1"
+
+                android:id="@+id/txtDescription"
+                android:textStyle="bold" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <include
+            android:id="@+id/include2"
+            layout="@layout/drawer_part"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:visibility="visible"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_270sdp"
+        android:background="@drawable/pv_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toEndOf="@+id/textView4"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/txtcurrent"
+                style="@style/font_family_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1" />
+
+            <TextView
+                style="@style/font_family_part_bold_lable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="/"
+
+                />
+
+            <TextView
+                android:id="@+id/txttotal"
+                style="@style/font_family_part_light_lable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5"
+
+                />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <TextView
+            android:id="@+id/textView4"
+            style="@style/font_small_orange_lables"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/part_family"
+            android:layout_marginStart="@dimen/_20sdp"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textFamily"
+            style="@style/font_family_part_bold_lable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20sdp"
+
+            android:layout_marginTop="@dimen/_2sdp"
+            android:text="@string/text_family"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/appCompatTextView"
+            style="@style/font_small_orange_lables"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/part_no"
+            android:layout_marginStart="@dimen/_20sdp"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textFamily" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/part_no"
+            style="@style/font_family_part_bold_lable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:text="@string/text_number"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/appCompatTextView" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/appCompatTextView2"
+            style="@style/font_family_part_light_lable2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/text_unable_scan"
+            app:layout_constraintBottom_toTopOf="@+id/lnredit"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.565"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textFamily"
+            app:layout_constraintVertical_bias="0.97" />
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lnredit"
+            android:background="@drawable/input_bg"
+
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            app:layout_constraintBottom_toTopOf="@+id/btnScan"
+            app:layout_constraintVertical_bias="0.919"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck"
+            tools:layout_editor_absoluteX="16dp"
+            android:orientation="horizontal"
+            android:weightSum="6">
+
+            <EditText
+                android:id="@+id/editPartNo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:maxLength="55"
+                android:layout_weight="5"
+                android:background="@drawable/input_bg"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+                android:textColor="@color/black"
+                />
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colourorange"
+                android:src="@drawable/ic_action_right"
+                android:visibility="invisible" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnScan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/lable_bg"
+            android:fontFamily="@font/open_sans_regular"
+            android:text="@string/scan_part_no"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:layout_editor_absoluteX="0dp" />
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/lnrSubQuan"
+            android:visibility="visible"
+            android:orientation="vertical"
+            app:layout_constraintStart_toEndOf="@+id/appCompatTextView"
+            app:layout_constraintTop_toBottomOf="@+id/textFamily">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtQuan"
+                style="@style/font_small_orange_lables"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/quantity"
+                app:layout_constraintStart_toEndOf="@+id/appCompatTextView"
+                app:layout_constraintTop_toBottomOf="@+id/textFamily" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toEndOf="@+id/part_no"
+                app:layout_constraintTop_toBottomOf="@+id/txtQuan">
+
+                <TextView
+                    android:id="@+id/txtcurrentpart"
+                    style="@style/font_family_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1" />
+
+                <TextView
+                    style="@style/font_family_part_bold_lable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtTotalParts123"
+                    android:text="/"
+
+                    />
+
+                <TextView
+                    android:id="@+id/txttotalPart"
+                    style="@style/font_family_part_light_lable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5"
+
+                    />
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

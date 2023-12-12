@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back_color">
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/text1"
+        style="@style/font_family_part_bold_lable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/validation_report"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.071"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textlable2"
+        style="@style/font_family_part_light_lable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/lable_scanned"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text1" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textSerial"
+        style="@style/font_family_part_bold_lable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:text="@string/lable_scanned"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textlable2" />
+
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textlable3"
+        style="@style/font_family_part_light_lable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:text="@string/part_no"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textSerial" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textpart"
+        style="@style/font_family_part_bold_lable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:text="@string/serial_no"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textlable3" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textlable4"
+        style="@style/font_family_part_light_lable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:text="@string/part_discription"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textpart" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textFamily"
+        style="@style/font_family_part_bold_lable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:text=""
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textlable4" />
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/pv_bg"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/lnrButton"
+        app:layout_constraintTop_toBottomOf="@+id/textFamily">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/_5sdp"
+            android:id="@+id/lnrbooklables"
+            android:background="@color/itemColour"
+            android:weightSum="6">
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/font_small_orange_lables"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:layout_marginStart="@dimen/_25sdp"
+                android:gravity="start"
+                android:text="@string/part_family2" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/font_small_orange_lables"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/status" />
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2">
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/font_small_orange_lables"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:layout_marginStart="20dp"
+                    android:text="@string/reason" />
+            </LinearLayout>
+
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/_5sdp"
+            android:id="@+id/lnrpartables"
+            android:background="@color/itemColour"
+
+            android:weightSum="14">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/font_small_orange_lables"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:text="#" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/font_small_orange_lables"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"
+                android:gravity="start"
+                android:text="@string/part_family" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/font_small_orange_lables"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="start"
+                android:text="@string/status" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/font_small_orange_lables"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+                android:layout_weight="4"
+                android:gravity="start"
+                android:text="@string/reason" />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyReport"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/lnrButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/lable_bg"
+        android:weightSum="2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:orientation="horizontal">
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/appCompatButton"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:textSize="@dimen/_11sdp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/lable_bg"
+            android:text="@string/continue1"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/appCompatButton1"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:textSize="@dimen/_11sdp"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:background="@drawable/success_bg"
+            android:text="@string/proceed_to_book"
+            />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
